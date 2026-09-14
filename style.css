@@ -454,7 +454,7 @@ a {
 
     padding: 15px 25px;
 
-    border: 1px solid #F4F1E8;
+    border: 1px solid #0A3158;
 
     border-radius: 50px;
 
@@ -483,7 +483,7 @@ a {
 
     inset: 0;
 
-    background: #C9A227;
+    background: #0A3158;
 
     transform: scaleX(0);
 
@@ -496,8 +496,9 @@ a {
 
 
 .btn-two:hover {
-    color: #061426;
-    border: 1px solid #C9A227;
+    color: #F4F1E8;
+    font-weight: 50px;
+    border: 1px solid #0A3158;
 }
 
 
@@ -516,86 +517,68 @@ a {
 ========================= */
 
 .btn-one {
-    color: #0A3158;
-
-    transition: all 0.3s;
-
     position: relative;
 
     display: inline-block;
 
+    padding: 15px 25px;
+
+    border: 1px solid #C9A227;
+    border-radius: 50px;
+
     overflow: hidden;
+
+    color: #C9A227;
+
+    transition: color 0.3s ease;
+
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 
 .btn-one span {
-    transition: all 0.3s;
-
     position: relative;
 
     z-index: 2;
+
+    transition: letter-spacing 0.3s ease;
 }
 
 
 .btn-one::before {
-    content: '';
+    content: "";
 
     position: absolute;
 
-    bottom: 0;
-    left: 0;
+    inset: 0;
 
-    width: 100%;
-    height: 100%;
+    background: #C9A227;
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: transform 0.35s ease;
 
     z-index: 1;
-
-    opacity: 0;
-
-    transition: all 0.3s;
-
-    border-top: 1px solid rgba(10, 49, 88, 0.5);
-    border-bottom: 1px solid rgba(10, 49, 88, 0.5);
-
-    transform: scale(0.1, 1);
 }
 
 
-.btn-one:hover span {
-    letter-spacing: 2px;
+.btn-one:hover {
+    color: #061426;
+
+    border-color: #C9A227;
 }
 
 
 .btn-one:hover::before {
-    opacity: 1;
-
-    transform: scale(1, 1);
+    transform: scaleX(1);
 }
 
 
-.btn-one::after {
-    content: '';
-
-    position: absolute;
-
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    z-index: 0;
-
-    transition: all 0.3s;
-
-    background-color: rgba(10, 49, 88, 0.08);
-}
-
-
-.btn-one:hover::after {
-    opacity: 0;
-
-    transform: scale(0.1, 1);
+.btn-one:hover span {
+    letter-spacing: 1px;
 }
 
 
