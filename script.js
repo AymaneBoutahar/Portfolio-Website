@@ -1,30 +1,62 @@
-// Simple reveal animation when elements enter the screen
+// =========================
+// PROJECT SCROLL ANIMATION
+// =========================
 
 const projects = document.querySelectorAll(".project");
 
-const observer = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
-            }
-
-        });
-    },
-    {
-        threshold: 0.15
-    }
-);
+const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+).matches;
 
 
-projects.forEach((project) => {
+// =========================
+// REDUCED MOTION
+// =========================
 
-    project.style.opacity = "0";
-    project.style.transform = "translateY(40px)";
-    project.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+if (prefersReducedMotion) {
 
-    observer.observe(project);
+    projects.forEach((project) => {
+        project.style.opacity = "1";
+        project.style.transform = "none";
+    });
 
-});
+}
+
+// =========================
+// SCROLL REVEAL
+// =========================
+
+else {
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("project-visible");
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.12,
+            rootMargin: "0px 0px -50px 0px"
+        }
+    );
+
+
+    projects.forEach((project) => {
+
+        project.classList.add("project-hidden");
+
+        observer.observe(project);
+
+    });
+
+}
