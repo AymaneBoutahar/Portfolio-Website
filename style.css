@@ -537,6 +537,26 @@ a {
 }
 
 
+.btn-four {
+    position: relative;
+
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    border: 1px solid #C9A227;
+    border-radius: 50px;
+
+    overflow: hidden;
+
+    color: #C9A227;
+
+    transition: color 0.3s ease;
+
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
 .btn-one span {
     position: relative;
 
