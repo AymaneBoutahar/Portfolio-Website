@@ -31,9 +31,9 @@ let projects = {
         result:
             "The final result is a short 3D animation demonstrating the character and movement.",
 
-        image2: "images/miles-morales/image2.jpg",
+        image2: "",
 
-        video: "",
+        video: "Cjj-ZdUxsg0",
 
         reflection:
             "This project helped me understand the basics of character animation and gave me more experience working with Maya."
@@ -297,4 +297,14 @@ if (!project) {
 
     }
 
+}
+
+let image2Section =
+    document.getElementById("project-image2-section");
+
+if (project.image2) {
+    image2Section.style.display = "flex";
+    document.getElementById("project-image2").src = project.image2;
+} else {
+    image2Section.style.display = "none";
 }
