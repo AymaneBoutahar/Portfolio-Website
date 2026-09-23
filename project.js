@@ -44,8 +44,8 @@ let projects = {
     "3d-modelling": {
 
         number: "02",
-        title: "3D",
-        titleSecond: "Modelling.",
+        title: "Whispers of",
+        titleSecond: "The Duat.",
 
         intro: "A 3D modelling project created during my studies.",
 
