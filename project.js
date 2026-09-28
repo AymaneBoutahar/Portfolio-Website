@@ -47,13 +47,13 @@ let projects = {
         title: "Whispers of",
         titleSecond: "The Duat.",
 
-        intro: "A 3D modelling project created during my studies.",
+        intro: "A 3D Game development project created during my studies.",
 
-        type: "3D Modelling",
-        tools: "Maya · Modelling · Animation",
-        year: "2025",
+        type: "3D Game development",
+        tools: "Unity · Animation · C#",
+        year: "2026",
 
-        cover: "images/3d-modelling/cover.jpg",
+        cover: "images/gaming/gaming-cover.png",
 
         description:
             "A project focused on creating and developing 3D models using Maya.",
@@ -61,7 +61,7 @@ let projects = {
         description2:
             "The project allowed me to experiment with modelling techniques and learn how to build 3D objects from scratch.",
 
-        image1: "images/3d-modelling/image1.jpg",
+        image1: "images/gaming/gaming-1.png",
 
         research:
             "I started by looking at references and planning the shapes and forms I wanted to create.",
@@ -72,7 +72,7 @@ let projects = {
         result:
             "The final result consists of the completed 3D models created during the project.",
 
-        image2: "images/3d-modelling/image2.jpg",
+        image2: "images/gaming/gaming-2.png",
 
         video: "",
 
@@ -92,9 +92,9 @@ let projects = {
 
         type: "Graphic Design",
         tools: "Illustrator · Photoshop · Figma",
-        year: "2025",
+        year: "2026",
 
-        cover: "images/visual-identity/cover.jpg",
+        cover: "images/duff/duff-cover.png",
 
         description:
             "A visual identity project created during my studies, focusing on creating a consistent visual language.",
@@ -102,7 +102,7 @@ let projects = {
         description2:
             "I explored typography, composition, colour and different graphic elements to develop the final identity.",
 
-        image1: "images/visual-identity/image1.jpg",
+        image1: "images/duff/duff-1.png",
 
         research:
             "I started by researching visual identities and collecting references that matched the direction of the project.",
@@ -113,7 +113,7 @@ let projects = {
         result:
             "The final result is a visual identity combining the different design elements into one consistent style.",
 
-        image2: "images/visual-identity/image2.jpg",
+        image2: "images/duff/duff-2.png",
 
         video: "",
 
@@ -132,10 +132,10 @@ let projects = {
         intro: "A poster design project focused on visual communication and composition.",
 
         type: "Graphic Design",
-        tools: "Illustrator · Photoshop",
-        year: "2025",
+        tools: "Figma",
+        year: "2026",
 
-        cover: "images/poster-design/cover.jpg",
+        cover: "images/smarthome/smarthome-cover.png",
 
         description:
             "A collection of poster design work created during my studies.",
@@ -143,7 +143,7 @@ let projects = {
         description2:
             "The projects focused on communicating an idea through typography, imagery, composition and visual hierarchy.",
 
-        image1: "images/poster-design/image1.jpg",
+        image1: "images/smarthome/smarthome-1.png",
 
         research:
             "I researched poster design and looked at different approaches to composition, typography and visual communication.",
@@ -154,7 +154,7 @@ let projects = {
         result:
             "The final poster combines the different design elements into a clear visual composition.",
 
-        image2: "images/poster-design/image2.jpg",
+        image2: "images/smarthome/smarthome-2.png",
 
         video: "",
 
