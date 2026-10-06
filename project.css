@@ -132,8 +132,11 @@ img {
 
 .small-text {
     font-size: 12px;
+
     letter-spacing: 2px;
+
     text-transform: uppercase;
+
     margin-bottom: 30px;
 }
 
@@ -241,9 +244,6 @@ img {
     padding: 130px 8% 100px;
 }
 
-
-/* Title sits above the image */
-
 .description-content {
     display: grid;
 
@@ -272,16 +272,57 @@ img {
 }
 
 
-/* IMAGE */
+/* =========================
+   ABOUT IMAGE / VIDEO
+========================= */
 
-.about-project-image {
+.about-project-media {
     grid-column: 1;
 
     width: 100%;
+
+    overflow: hidden;
+}
+
+.about-project-media img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
 }
 
 
-/* TEXT BESIDE IMAGE */
+/* ABOUT VIDEO */
+
+.about-video-container {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: #061426;
+
+    overflow: hidden;
+}
+
+.about-video-container iframe {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+
+/* =========================
+   DESCRIPTION TEXT
+========================= */
 
 .description-text {
     grid-column: 2;
@@ -299,44 +340,6 @@ img {
     line-height: 1.7;
 
     margin-bottom: 25px;
-}
-
-
-/* =========================
-   PROJECT IMAGES
-========================= */
-
-/* IMAGE 1 */
-
-.project-image-large {
-    padding: 0 8% 150px;
-
-    display: flex;
-
-    justify-content: flex-end;
-}
-
-.project-image-large img {
-    width: 85%;
-
-    height: auto;
-
-    max-height: 80vh;
-
-    object-fit: contain;
-
-    object-position: center;
-}
-
-
-/* IMAGE 2 */
-
-.project-image-large:has(#project-image2) {
-    justify-content: flex-start;
-}
-
-.project-image-large:has(#project-image2) img {
-    width: 75%;
 }
 
 
@@ -388,7 +391,209 @@ img {
 
 
 /* =========================
-   VIDEO
+   PROJECT GALLERY
+========================= */
+
+.project-gallery {
+    margin-top: 100px;
+
+    position: relative;
+}
+
+
+/* SCROLLABLE IMAGE ROW */
+
+.gallery-track {
+    display: flex;
+
+    gap: 25px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+
+    cursor: grab;
+}
+
+.gallery-track::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* GALLERY IMAGES */
+
+.gallery-image {
+    flex: 0 0 70%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(0.98);
+}
+
+
+/* GALLERY ARROWS */
+
+.gallery-controls {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.gallery-controls button {
+    width: 50px;
+
+    height: 50px;
+
+    border: 1px solid #0A3158;
+
+    background: transparent;
+
+    color: #0A3158;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.gallery-controls button:hover {
+    background: #0A3158;
+
+    color: #F4F1E8;
+}
+
+
+/* =========================
+   IMAGE LIGHTBOX
+========================= */
+
+.image-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    background: rgba(6, 20, 38, 0.95);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 50px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: opacity 0.3s ease;
+}
+
+.image-lightbox.active {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* LARGE IMAGE */
+
+.image-lightbox img {
+    max-width: 85%;
+
+    max-height: 85vh;
+
+    width: auto;
+
+    object-fit: contain;
+}
+
+
+/* CLOSE BUTTON */
+
+.lightbox-close {
+    position: absolute;
+
+    top: 25px;
+
+    right: 35px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #F4F1E8;
+
+    font-size: 45px;
+
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+
+/* LIGHTBOX ARROWS */
+
+.lightbox-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 55px;
+
+    height: 55px;
+
+    border: 1px solid #F4F1E8;
+
+    background: transparent;
+
+    color: #F4F1E8;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    z-index: 2;
+}
+
+.lightbox-arrow:hover {
+    background: #F4F1E8;
+
+    color: #061426;
+}
+
+.lightbox-prev {
+    left: 30px;
+}
+
+.lightbox-next {
+    right: 30px;
+}
+
+
+/* =========================
+   PROJECT VIDEO
 ========================= */
 
 .project-video {
@@ -537,6 +742,7 @@ footer {
     display: flex;
 
     justify-content: space-between;
+
     align-items: center;
 
     background: #061426;
@@ -593,38 +799,74 @@ footer a:hover::after {
         padding: 25px 6%;
     }
 
+
+    /* HERO */
+
     .project-hero {
         padding-left: 6%;
+
         padding-right: 6%;
     }
+
+
+    /* ABOUT */
 
     .project-description {
         padding-left: 6%;
+
         padding-right: 6%;
     }
+
+    .description-content {
+        column-gap: 50px;
+    }
+
+    .description-text {
+        padding-top: 200px;
+    }
+
+
+    /* PROCESS */
 
     .project-process {
         padding-left: 6%;
+
         padding-right: 6%;
     }
 
-    .project-image-large {
-        padding-left: 6%;
-        padding-right: 6%;
+
+    /* GALLERY */
+
+    .gallery-image {
+        flex: 0 0 80%;
+
+        height: 450px;
     }
+
+
+    /* VIDEO */
 
     .project-video {
         padding-left: 6%;
+
         padding-right: 6%;
     }
+
+
+    /* REFLECTION */
 
     .project-reflection {
         padding-left: 6%;
+
         padding-right: 6%;
     }
 
+
+    /* END */
+
     .project-end {
         padding-left: 6%;
+
         padding-right: 6%;
     }
 
@@ -636,6 +878,8 @@ footer a:hover::after {
 ========================= */
 
 @media (max-width: 700px) {
+
+    /* NAVIGATION */
 
     .navbar {
         padding: 20px 6%;
@@ -650,7 +894,9 @@ footer a:hover::after {
     }
 
 
-    /* HERO */
+    /* =========================
+       HERO
+    ========================== */
 
     .project-hero {
         min-height: 75vh;
@@ -671,7 +917,9 @@ footer a:hover::after {
     }
 
 
-    /* META */
+    /* =========================
+       META
+    ========================== */
 
     .project-meta {
         grid-template-columns: 1fr;
@@ -680,7 +928,9 @@ footer a:hover::after {
     }
 
 
-    /* COVER */
+    /* =========================
+       COVER
+    ========================== */
 
     .project-feature {
         height: auto;
@@ -699,7 +949,9 @@ footer a:hover::after {
     }
 
 
-    /* ABOUT PROJECT */
+    /* =========================
+       ABOUT PROJECT
+    ========================== */
 
     .project-description {
         padding: 100px 6% 80px;
@@ -721,11 +973,29 @@ footer a:hover::after {
         margin-bottom: 40px;
     }
 
-    .about-project-image {
+
+    /* ABOUT IMAGE / VIDEO */
+
+    .about-project-media {
         width: 100%;
 
         margin-bottom: 40px;
     }
+
+    .about-project-media img {
+        width: 100%;
+
+        height: auto;
+    }
+
+    .about-video-container {
+        width: 100%;
+
+        aspect-ratio: 16 / 9;
+    }
+
+
+    /* DESCRIPTION TEXT */
 
     .description-text {
         padding: 0;
@@ -736,26 +1006,9 @@ footer a:hover::after {
     }
 
 
-    /* PROJECT IMAGES */
-
-    .project-image-large {
-        padding: 0 6% 100px;
-
-        display: block;
-    }
-
-    .project-image-large img {
-        width: 100%;
-
-        height: auto;
-
-        max-height: none;
-
-        object-fit: contain;
-    }
-
-
-    /* PROCESS */
+    /* =========================
+       PROCESS
+    ========================== */
 
     .project-process {
         padding: 100px 6%;
@@ -772,14 +1025,91 @@ footer a:hover::after {
     }
 
 
-    /* VIDEO */
+    /* =========================
+       GALLERY
+    ========================== */
+
+    .project-gallery {
+        margin-top: 70px;
+    }
+
+    .gallery-track {
+        gap: 15px;
+    }
+
+    .gallery-image {
+        flex: 0 0 88%;
+
+        height: 300px;
+    }
+
+
+    /* GALLERY BUTTONS */
+
+    .gallery-controls {
+        justify-content: space-between;
+
+        margin-top: 20px;
+    }
+
+    .gallery-controls button {
+        width: 48px;
+
+        height: 48px;
+    }
+
+
+    /* =========================
+       LIGHTBOX
+    ========================== */
+
+    .image-lightbox {
+        padding: 20px;
+    }
+
+    .image-lightbox img {
+        max-width: 90%;
+
+        max-height: 80vh;
+    }
+
+    .lightbox-close {
+        top: 15px;
+
+        right: 20px;
+
+        font-size: 35px;
+    }
+
+    .lightbox-arrow {
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 18px;
+    }
+
+    .lightbox-prev {
+        left: 10px;
+    }
+
+    .lightbox-next {
+        right: 10px;
+    }
+
+
+    /* =========================
+       VIDEO
+    ========================== */
 
     .project-video {
         padding: 0 6% 100px;
     }
 
 
-    /* REFLECTION */
+    /* =========================
+       REFLECTION
+    ========================== */
 
     .project-reflection {
         padding: 100px 6%;
@@ -796,14 +1126,18 @@ footer a:hover::after {
     }
 
 
-    /* END */
+    /* =========================
+       END
+    ========================== */
 
     .project-end {
         padding: 90px 6%;
     }
 
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+    ========================== */
 
     footer {
         padding: 30px 6%;
@@ -832,6 +1166,9 @@ footer a:hover::after {
         display: none;
     }
 
+
+    /* HERO */
+
     .project-hero {
         padding-top: 120px;
     }
@@ -840,6 +1177,32 @@ footer a:hover::after {
         font-size: 50px;
 
         letter-spacing: -3px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-image {
+        flex: 0 0 90%;
+
+        height: 250px;
+    }
+
+
+    /* LIGHTBOX */
+
+    .image-lightbox img {
+        max-width: 85%;
+
+        max-height: 75vh;
+    }
+
+    .lightbox-arrow {
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 16px;
     }
 
 }

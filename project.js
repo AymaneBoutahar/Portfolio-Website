@@ -22,6 +22,8 @@ let projects = {
 
         image1: "images/modelling/modelling-1.png",
 
+        aboutVideo: "",
+
         research:
             "I started by studying the character and looking at references for movement, posing and animation.",
 
@@ -31,7 +33,11 @@ let projects = {
         result:
             "The final result is a short 3D animation demonstrating the character and movement.",
 
-        image2: "",
+        gallery: [
+            "images/modelling/placeholder.png",
+            "images/modelling/placeholder.png",
+            "images/modelling/placeholder.png"
+        ],
 
         video: "Cjj-ZdUxsg0",
 
@@ -63,6 +69,8 @@ let projects = {
 
         image1: "images/gaming/gaming-1.png",
 
+        aboutVideo: "",
+
         research:
             "I started by looking at references and planning the shapes and forms I wanted to create.",
 
@@ -72,7 +80,11 @@ let projects = {
         result:
             "The final result consists of the completed 3D models created during the project.",
 
-        image2: "images/gaming/gaming-2.png",
+        gallery: [
+            "images/gaming/placeholder.png",
+            "images/gaming/placeholder.png",
+            "images/gaming/placeholder.png"
+        ],
 
         video: "",
 
@@ -104,6 +116,8 @@ let projects = {
 
         image1: "images/duff/duff-1.png",
 
+        aboutVideo: "",
+
         research:
             "I started by researching visual identities and collecting references that matched the direction of the project.",
 
@@ -113,7 +127,11 @@ let projects = {
         result:
             "The final result is a visual identity combining the different design elements into one consistent style.",
 
-        image2: "images/duff/duff-2.png",
+        gallery: [
+            "images/duff/placeholder.png",
+            "images/duff/placeholder.png",
+            "images/duff/placeholder.png"
+        ],
 
         video: "",
 
@@ -145,6 +163,8 @@ let projects = {
 
         image1: "images/smarthome/smarthome-1.png",
 
+        aboutVideo: "",
+
         research:
             "I researched poster design and looked at different approaches to composition, typography and visual communication.",
 
@@ -154,7 +174,11 @@ let projects = {
         result:
             "The final poster combines the different design elements into a clear visual composition.",
 
-        image2: "images/smarthome/smarthome-2.png",
+        gallery: [
+            "images/smarthome/placeholder.png",
+            "images/smarthome/placeholder.png",
+            "images/smarthome/placeholder.png"
+        ],
 
         video: "",
 
@@ -186,6 +210,8 @@ let projects = {
 
         image1: "images/motion-project/image1.jpg",
 
+        aboutVideo: "",
+
         research:
             "I researched motion graphics and looked at different examples of animation and visual storytelling.",
 
@@ -195,7 +221,11 @@ let projects = {
         result:
             "The final result is a short motion graphics piece combining animation and visual elements.",
 
-        image2: "images/motion-project/image2.jpg",
+        gallery: [
+            "images/motion-project/placeholder.png",
+            "images/motion-project/placeholder.png",
+            "images/motion-project/placeholder.png"
+        ],
 
         video: "",
 
@@ -206,11 +236,20 @@ let projects = {
 
 };
 
-let urlParams = new URLSearchParams(window.location.search);
 
-let projectId = urlParams.get("id");
+/* =========================
+   GET PROJECT
+========================= */
 
-let project = projects[projectId];
+let urlParams =
+    new URLSearchParams(window.location.search);
+
+let projectId =
+    urlParams.get("id");
+
+let project =
+    projects[projectId];
+
 
 if (!project) {
 
@@ -218,16 +257,30 @@ if (!project) {
 
 } else {
 
-    document.title = project.title + " — Aymane Boutahar";
+    document.title =
+        project.title + " — Aymane Boutahar";
+
+
+    /* =========================
+       HERO
+    ========================== */
 
     document.getElementById("project-number").textContent =
         project.number + " — PROJECT";
 
     document.getElementById("project-title").innerHTML =
-        project.title + "<br><span>" + project.titleSecond + "</span>";
+        project.title +
+        "<br><span>" +
+        project.titleSecond +
+        "</span>";
 
     document.getElementById("project-intro").textContent =
         project.intro;
+
+
+    /* =========================
+       META
+    ========================== */
 
     document.getElementById("project-type").textContent =
         project.type;
@@ -239,12 +292,20 @@ if (!project) {
         project.year;
 
 
+    /* =========================
+       COVER
+    ========================== */
+
     document.getElementById("project-cover").src =
         project.cover;
 
     document.getElementById("project-cover").alt =
         project.title;
 
+
+    /* =========================
+       DESCRIPTION
+    ========================== */
 
     document.getElementById("project-description").textContent =
         project.description;
@@ -253,9 +314,56 @@ if (!project) {
         project.description2;
 
 
-    document.getElementById("project-image1").src =
-        project.image1;
+    /* =========================
+       ABOUT IMAGE / VIDEO
+    ========================== */
 
+    let aboutImage =
+        document.getElementById("project-image1");
+
+    let aboutVideoContainer =
+        document.getElementById("about-video-container");
+
+    let aboutVideo =
+        document.getElementById("about-project-video");
+
+
+    if (project.image1) {
+
+        aboutImage.style.display = "block";
+
+        aboutImage.src =
+            project.image1;
+
+        aboutVideoContainer.style.display =
+            "none";
+
+    } else if (project.aboutVideo) {
+
+        aboutImage.style.display =
+            "none";
+
+        aboutVideoContainer.style.display =
+            "block";
+
+        aboutVideo.src =
+            "https://www.youtube.com/embed/" +
+            project.aboutVideo;
+
+    } else {
+
+        aboutImage.style.display =
+            "none";
+
+        aboutVideoContainer.style.display =
+            "none";
+
+    }
+
+
+    /* =========================
+       PROCESS
+    ========================== */
 
     document.getElementById("project-research").textContent =
         project.research;
@@ -267,15 +375,286 @@ if (!project) {
         project.result;
 
 
-    document.getElementById("project-image2").src =
-        project.image2;
+    /* =========================
+       GALLERY
+    ========================== */
 
+    let galleryTrack =
+        document.getElementById("gallery-track");
+
+    galleryTrack.innerHTML = "";
+
+
+    /* CREATE GALLERY IMAGES */
+
+    for (let i = 0; i < project.gallery.length; i++) {
+
+        let image =
+            document.createElement("img");
+
+        image.src =
+            project.gallery[i];
+
+        image.alt =
+            project.title +
+            " gallery image";
+
+        image.classList.add("gallery-image");
+
+        image.dataset.index =
+            i;
+
+        galleryTrack.appendChild(image);
+
+    }
+
+
+    let galleryImages =
+        document.querySelectorAll(".gallery-image");
+
+
+    /* =========================
+       GALLERY CONTROLS
+    ========================== */
+
+    let galleryPrev =
+        document.getElementById("gallery-prev");
+
+    let galleryNext =
+        document.getElementById("gallery-next");
+
+    let currentGalleryImage =
+        0;
+
+
+    /* NEXT */
+
+    galleryNext.addEventListener("click", function() {
+
+        currentGalleryImage++;
+
+        if (
+            currentGalleryImage >=
+            galleryImages.length
+        ) {
+
+            currentGalleryImage = 0;
+
+        }
+
+        galleryImages[currentGalleryImage].scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+            inline: "center"
+        });
+
+    });
+
+
+    /* PREVIOUS */
+
+    galleryPrev.addEventListener("click", function() {
+
+        currentGalleryImage--;
+
+        if (currentGalleryImage < 0) {
+
+            currentGalleryImage =
+                galleryImages.length - 1;
+
+        }
+
+        galleryImages[currentGalleryImage].scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+            inline: "center"
+        });
+
+    });
+
+
+    /* =========================
+       LIGHTBOX
+    ========================== */
+
+    let lightbox =
+        document.getElementById("image-lightbox");
+
+    let lightboxImage =
+        document.getElementById("lightbox-image");
+
+    let lightboxClose =
+        document.getElementById("lightbox-close");
+
+    let lightboxPrev =
+        document.getElementById("lightbox-prev");
+
+    let lightboxNext =
+        document.getElementById("lightbox-next");
+
+    let currentImage =
+        0;
+
+
+    /* SHOW IMAGE */
+
+    function showLightboxImage(index) {
+
+        currentImage =
+            index;
+
+        lightboxImage.src =
+            project.gallery[currentImage];
+
+        lightbox.classList.add("active");
+
+        document.body.style.overflow =
+            "hidden";
+
+    }
+
+
+    /* CLOSE */
+
+    function closeLightbox() {
+
+        lightbox.classList.remove("active");
+
+        document.body.style.overflow =
+            "";
+
+    }
+
+
+    /* NEXT */
+
+    function nextLightboxImage() {
+
+        currentImage++;
+
+        if (
+            currentImage >=
+            project.gallery.length
+        ) {
+
+            currentImage = 0;
+
+        }
+
+        lightboxImage.src =
+            project.gallery[currentImage];
+
+    }
+
+
+    /* PREVIOUS */
+
+    function previousLightboxImage() {
+
+        currentImage--;
+
+        if (currentImage < 0) {
+
+            currentImage =
+                project.gallery.length - 1;
+
+        }
+
+        lightboxImage.src =
+            project.gallery[currentImage];
+
+    }
+
+
+    /* CLICK GALLERY IMAGE */
+
+    galleryImages.forEach(function(image) {
+
+        image.addEventListener("click", function() {
+
+            let index =
+                Number(image.dataset.index);
+
+            showLightboxImage(index);
+
+        });
+
+    });
+
+
+    /* LIGHTBOX BUTTONS */
+
+    lightboxClose.addEventListener(
+        "click",
+        closeLightbox
+    );
+
+    lightboxNext.addEventListener(
+        "click",
+        nextLightboxImage
+    );
+
+    lightboxPrev.addEventListener(
+        "click",
+        previousLightboxImage
+    );
+
+
+    /* CLICK BACKGROUND */
+
+    lightbox.addEventListener("click", function(event) {
+
+        if (event.target === lightbox) {
+
+            closeLightbox();
+
+        }
+
+    });
+
+
+    /* KEYBOARD */
+
+    document.addEventListener("keydown", function(event) {
+
+        if (!lightbox.classList.contains("active")) {
+
+            return;
+
+        }
+
+        if (event.key === "Escape") {
+
+            closeLightbox();
+
+        }
+
+        if (event.key === "ArrowRight") {
+
+            nextLightboxImage();
+
+        }
+
+        if (event.key === "ArrowLeft") {
+
+            previousLightboxImage();
+
+        }
+
+    });
+
+
+    /* =========================
+       REFLECTION
+    ========================== */
 
     document.getElementById("project-reflection").textContent =
         project.reflection;
 
 
-    /* VIDEO */
+    /* =========================
+       PROJECT VIDEO
+    ========================== */
 
     let videoSection =
         document.getElementById("project-video-section");
@@ -286,25 +665,18 @@ if (!project) {
 
     if (project.video) {
 
-        videoSection.style.display = "block";
+        videoSection.style.display =
+            "block";
 
         video.src =
-            "https://www.youtube.com/embed/" + project.video;
+            "https://www.youtube.com/embed/" +
+            project.video;
 
     } else {
 
-        videoSection.style.display = "none";
+        videoSection.style.display =
+            "none";
 
     }
 
-}
-
-let image2Section =
-    document.getElementById("project-image2-section");
-
-if (project.image2) {
-    image2Section.style.display = "flex";
-    document.getElementById("project-image2").src = project.image2;
-} else {
-    image2Section.style.display = "none";
 }

@@ -127,15 +127,32 @@
             </h2>
 
 
-            <!-- IMAGE 1 -->
+            <!-- IMAGE OR VIDEO -->
 
-            <div class="about-project-image">
+            <div
+                class="about-project-media"
+                id="about-project-media"
+            >
 
                 <img
                     id="project-image1"
                     src=""
                     alt="Project image"
                 >
+
+                <div
+                    class="about-video-container"
+                    id="about-video-container"
+                >
+
+                    <iframe
+                        id="about-project-video"
+                        src=""
+                        title="Project video"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
 
             </div>
 
@@ -217,52 +234,77 @@
 
         </div>
 
+
+        <!-- =========================
+             IMAGE GALLERY
+        ========================== -->
+
+        <div class="project-gallery">
+
+            <div class="gallery-track" id="gallery-track">
+
+                <!-- Images are added by JavaScript -->
+
+            </div>
+
+            <div class="gallery-controls">
+
+                <button id="gallery-prev">
+                    ←
+                </button>
+
+                <button id="gallery-next">
+                    →
+                </button>
+
+            </div>
+
+        </div>
+
     </section>
 
 
 
     <!-- =========================
-         IMAGE 2
+         IMAGE POPUP
     ========================== -->
 
-    <section class="project-image-large" id="project-image2-section">
+    <div
+        class="image-lightbox"
+        id="image-lightbox"
+    >
+
+        <button
+            class="lightbox-close"
+            id="lightbox-close"
+        >
+            ×
+        </button>
+
+
+        <button
+            class="lightbox-arrow lightbox-prev"
+            id="lightbox-prev"
+        >
+            ←
+        </button>
+
 
         <img
-            id="project-image2"
+            id="lightbox-image"
             src=""
             alt="Project image"
         >
 
-    </section>
 
+        <button
+            class="lightbox-arrow lightbox-next"
+            id="lightbox-next"
+        >
+            →
+        </button>
 
-
-    <!-- =========================
-         YOUTUBE VIDEO
-    ========================== -->
-
-    <section
-        class="project-video"
-        id="project-video-section"
-    >
-
-        <div class="section-label">
-            PROJECT VIDEO
-        </div>
-
-
-        <div class="video-container">
-
-            <iframe
-                id="project-video"
-                src=""
-                title="Project video"
-                allowfullscreen>
-            </iframe>
-
-        </div>
-
-    </section>
+    </div>
 
 
 
@@ -316,7 +358,7 @@
 
 <!-- =========================
      FOOTER
-========================== -->
+========================= -->
 
 <footer>
 
@@ -344,10 +386,6 @@
 </footer>
 
 
-
-<!-- =========================
-     JAVASCRIPT
-========================== -->
 
 <script src="project.js"></script>
 
