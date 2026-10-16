@@ -3,35 +3,35 @@ let projects = {
     "miles-morales": {
 
         number: "01",
-        title: "Miles Morales",
+        title: "A Miles Morales",
         titleSecond: "Animation.",
 
-        intro: "A 3D animation project created using Maya, focusing on character animation and movement.",
+        intro: "A 3D animation of Miles Morales in the city",
 
-        type: "3D & Animation",
-        tools: "Maya · 3D · Animation",
+        type: "3D modelling & Animation",
+        tools: "Maya · Unity · Adobe Substance Painter",
         year: "2026",
 
         cover: "images/modelling/modelling-cover.png",
 
         description:
-            "A 3D animation project created during my studies. The project focused on bringing a character to life through movement and animation.",
+            "A 3D animation project created during my studies. This project helped me understand how to fully model, rig, & texture a character in Maya.",
 
         description2:
-            "I worked on the animation, movement and overall presentation of the character while learning more about 3D animation in Maya.",
+            "I started thinking of what character I wanted to model and chose Miles. It was a tough journey to only use quads for my model but it turned out pretty cool in the end.",
 
         image1: "images/modelling/modelling-1.png",
 
         aboutVideo: "",
 
         research:
-            "I started by studying the character and looking at references for movement, posing and animation.",
+            "I started by studying the character and looking at references images, thinking of what type of animations I could add, etc.",
 
         development:
-            "The animation was developed in Maya, where I worked on the character movement and timing.",
+            "The modelling was done in Maya and the texturing was put together in Substance Painter. In the end, I exported my model to Unity to make my animation.",
 
         result:
-            "The final result is a short 3D animation demonstrating the character and movement.",
+            "The final result is a short 3D animation featuring Miles Morales in full action in my first 3D animation!",
 
         gallery: [
             "images/modelling/placeholder.png",
@@ -39,10 +39,10 @@ let projects = {
             "images/modelling/placeholder.png"
         ],
 
-        video: "Cjj-ZdUxsg0",
+        video: "CjjZdUxsg0",
 
         reflection:
-            "This project helped me understand the basics of character animation and gave me more experience working with Maya."
+            "This project helped me understand the basics of fully modelling and rigging a character to then export it into Unity for the final animation. It was a tough but fun journey and would love to continue on working on projects like this in the future."
 
     },
 
@@ -53,32 +53,32 @@ let projects = {
         title: "Whispers of",
         titleSecond: "The Duat.",
 
-        intro: "A 3D Game development project created during my studies.",
+        intro: "My first 3D game development project & introduction to Unity",
 
         type: "3D Game development",
-        tools: "Unity · Animation · C#",
+        tools: "Unity · Visual Studio Code",
         year: "2026",
 
         cover: "images/gaming/gaming-cover.png",
 
         description:
-            "A project focused on creating and developing 3D models using Maya.",
+            "I created a dungeon game demo where the player has to find their way out of the dungeon by finding the keys deep inside it.",
 
         description2:
-            "The project allowed me to experiment with modelling techniques and learn how to build 3D objects from scratch.",
+            "This project helped me understand how to map out layers of a level, work with game logic & how to animate assets in the game scene.",
 
         image1: "images/gaming/gaming-1.png",
 
         aboutVideo: "",
 
         research:
-            "I started by looking at references and planning the shapes and forms I wanted to create.",
+            "I started brainstorming on game ideas and levels that could be implemented in our game. I was leaning towards a The legend of Zelda genre of game. From there I started making a moodboard to show I want my first game to have.",
 
         development:
-            "I created the models in Maya while experimenting with different modelling techniques.",
+            "I started importing the neccesary assets that I thought would help boost the vibe of the game and started scripting the logic after my dungeon level was made.",
 
         result:
-            "The final result consists of the completed 3D models created during the project.",
+            "The final result was my first ever 3D game demo which featured similar mechanics as in any other The legend of Zelda game such as the 3 hearts, a sword to attack, interactable NPC's, enemies & a final boss.",
 
         gallery: [
             "images/gaming/placeholder.png",
@@ -97,35 +97,35 @@ let projects = {
     "visual-identity": {
 
         number: "03",
-        title: "Visual",
-        titleSecond: "Identity.",
+        title: "A campaign",
+        titleSecond: "Poster",
 
-        intro: "A graphic design project exploring typography, composition and visual identity.",
+        intro: "A graphic design project about visual identity and campaign posters",
 
         type: "Graphic Design",
-        tools: "Illustrator · Photoshop · Figma",
+        tools: "Illustrator · Photoshop · Indesign",
         year: "2026",
 
         cover: "images/duff/duff-cover.png",
 
         description:
-            "A visual identity project created during my studies, focusing on creating a consistent visual language.",
+            "A visual design project where I had to find a fictionary problem and had to make a poster to visually show the problem and what the solution to that problem could be.",
 
         description2:
-            "I explored typography, composition, colour and different graphic elements to develop the final identity.",
+            "I took gingy from shrek as an example that he keeps getting bullied by lord Farquad. I then started thinking of how I can show a proper solution and how to visually show the problem.",
 
         image1: "images/duff/duff-1.png",
 
         aboutVideo: "",
 
         research:
-            "I started by researching visual identities and collecting references that matched the direction of the project.",
+            "I started by sketching ways to show gingy getting hurt/bullied. I even started looking on pinterest for illustrations and made a moodboard out of it to help me further.",
 
         development:
-            "I developed different visual ideas and experimented with typography, layouts and graphic elements.",
+            "I started drawing out the poster in Illustrator and imported it into Indesign once everything was done. I then added the title text 'swallow' to make it clear gingy is being silenced away by Farquad. ",
 
         result:
-            "The final result is a visual identity combining the different design elements into one consistent style.",
+            "The final result is a visual poster showing gingy being eaten by lord Farquad with the solution being anti-swallow glaze.",
 
         gallery: [
             "images/duff/placeholder.png",
@@ -136,7 +136,7 @@ let projects = {
         video: "",
 
         reflection:
-            "This project helped me develop my visual design skills and understand the importance of consistency in a visual identity."
+            "This project helped me develop my visual design skills and understand the importance brainstorming and working out the final product."
 
     },
 
@@ -144,35 +144,35 @@ let projects = {
     "poster-design": {
 
         number: "04",
-        title: "Poster",
-        titleSecond: "Design.",
+        title: "A smarthome",
+        titleSecond: "Dashboard",
 
-        intro: "A poster design project focused on visual communication and composition.",
+        intro: "A project where I made a smarthome dashboard with all its functionalities visually present.",
 
-        type: "Graphic Design",
+        type: "UI/UX design",
         tools: "Figma",
         year: "2026",
 
         cover: "images/smarthome/smarthome-cover.png",
 
         description:
-            "A collection of poster design work created during my studies.",
+            "A smarthome dashboard that contains information on your home energy use, security alarms, statistics of your weekly usages, etc.",
 
         description2:
-            "The projects focused on communicating an idea through typography, imagery, composition and visual hierarchy.",
+            "This project was a tiny bit challenging as it required a lot of consistency and recognizable visual identity. I love the end result I came up with in the end.",
 
         image1: "images/smarthome/smarthome-1.png",
 
         aboutVideo: "",
 
         research:
-            "I researched poster design and looked at different approaches to composition, typography and visual communication.",
+            "I researched what concurrent smarthomes have on their dashboard and what they view on the home screen. I then made a moodboard to show how I wanted my smarthome UI to look like and the feel I wanted to give it.",
 
         development:
-            "I experimented with different layouts, typography and imagery before developing the final design.",
+            "I then started working in figma and experimented with different tools to add that glassy effect on the buttons and added variables for button animations wherever needed. I used my moodboard as inspiration tool.",
 
         result:
-            "The final poster combines the different design elements into a clear visual composition.",
+            "The final product ended up looking really cozy and warm. I was very happy with the work I delivered and now have a better understanding of how consistency is key when designing dashboards and userinterfaces like this.",
 
         gallery: [
             "images/smarthome/placeholder.png",
@@ -183,7 +183,7 @@ let projects = {
         video: "",
 
         reflection:
-            "This project helped me become more comfortable with composition and communicating an idea visually."
+            "This project helped me become more comfortable with consistency and visually designing everything so that every page feels recognizable."
 
     },
 
