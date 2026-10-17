@@ -98,7 +98,7 @@ let projects = {
 
         number: "03",
         title: "A campaign",
-        titleSecond: "Poster",
+        titleSecond: "poster",
 
         intro: "A graphic design project about visual identity and campaign posters",
 
@@ -145,7 +145,7 @@ let projects = {
 
         number: "04",
         title: "A smarthome",
-        titleSecond: "Dashboard",
+        titleSecond: "dashboard",
 
         intro: "A project where I made a smarthome dashboard with all its functionalities visually present.",
 
