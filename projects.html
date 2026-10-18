@@ -17,20 +17,60 @@
          NAVIGATION
     ========================== -->
 
-    <header class="navbar">
+<header class="navbar">
 
-        <a href="index.html" class="logo">
-            Aymane <br><span>Boutahar</span>
-        </a>
+    <button
+        class="menu-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Work</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#contact">Contact</a>
-        </nav>
+    <a href="index.html" class="logo">
+        Aymane <br><span>Boutahar</span>
+    </a>
 
-    </header>
+    <!-- DESKTOP NAV -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+
+            <p class="small-text">NAVIGATION</p>
+
+            <a href="projects.html">
+                <span>Work</span>
+                <small>01</small>
+            </a>
+
+            <a href="index.html#about">
+                <span>About Me</span>
+                <small>02</small>
+            </a>
+
+            <a href="index.html#skills">
+                <span>My Skills</span>
+                <small>03</small>
+            </a>
+
+            <a href="index.html#contact">
+                <span>Contact</span>
+                <small>04</small>
+            </a>
+
+        </div>
+    </div>
+
+</header>
 
 
     <!-- =========================
@@ -420,6 +460,6 @@
         </div>
 
     </footer>
-
+    <script src="hamburger.js"></script>
 </body>
 </html>
