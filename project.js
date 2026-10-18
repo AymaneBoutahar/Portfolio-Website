@@ -36,6 +36,8 @@ let projects = {
         gallery: [
             "images/modelling/placeholder.png",
             "images/modelling/placeholder.png",
+            "images/modelling/placeholder.png",
+            "images/modelling/placeholder.png",
             "images/modelling/placeholder.png"
         ],
 
