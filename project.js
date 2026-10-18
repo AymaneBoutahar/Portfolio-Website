@@ -20,7 +20,7 @@ let projects = {
         description2:
             "I started thinking of what character I wanted to model and chose Miles. It was a tough journey to only use quads for my model but it turned out pretty cool in the end.",
 
-        image1: "images/modelling/modelling-1.png",
+        image1: "images/modelling/modelling-box.png",
 
         aboutVideo: "",
 
@@ -76,7 +76,7 @@ let projects = {
         description2:
             "This project helped me understand how to map out layers of a level, work with game logic & how to animate assets in the game scene.",
 
-        image1: "images/gaming/gaming-1.png",
+        image1: "images/gaming/gaming-6.png",
 
         aboutVideo: "",
 
@@ -90,9 +90,20 @@ let projects = {
             "The final result was my first ever 3D game demo which featured similar mechanics as in any other The legend of Zelda game such as the 3 hearts, a sword to attack, interactable NPC's, enemies & a final boss.",
 
         gallery: [
-            "images/gaming/placeholder.png",
-            "images/gaming/placeholder.png",
-            "images/gaming/placeholder.png"
+            "images/gaming/gaming-1.png",
+            "images/gaming/gaming-2.png",
+            "images/gaming/gaming-3.png",
+            "images/gaming/gaming-4.png",
+            "images/gaming/gaming-5.png",
+            "images/gaming/gaming-6.png",
+            "images/gaming/gaming-7.png",
+            "images/gaming/gaming-8.png",
+            "images/gaming/gaming-9.png",
+            "images/gaming/gaming-10.png",
+            "images/gaming/gaming-cover.png",
+
+            
+            
         ],
 
         video: "",
@@ -123,7 +134,7 @@ let projects = {
         description2:
             "I took gingy from shrek as an example that he keeps getting bullied by lord Farquad. I then started thinking of how I can show a proper solution and how to visually show the problem.",
 
-        image1: "images/duff/duff-1.png",
+        image1: "images/duff/duff-box.png",
 
         aboutVideo: "",
 
@@ -137,9 +148,9 @@ let projects = {
             "The final result is a visual poster showing gingy being eaten by lord Farquad with the solution being anti-swallow glaze.",
 
         gallery: [
-            "images/duff/placeholder.png",
-            "images/duff/placeholder.png",
-            "images/duff/placeholder.png"
+            "images/duff/duff-cover.png",
+            "images/duff/duff-1.png",
+            "images/duff/duff-2.png"
         ],
 
         video: "",
@@ -170,7 +181,7 @@ let projects = {
         description2:
             "This project was a tiny bit challenging as it required a lot of consistency and recognizable visual identity. I love the end result I came up with in the end.",
 
-        image1: "images/smarthome/smarthome-1.png",
+        image1: "images/smarthome/smarthome-cover.png",
 
         aboutVideo: "",
 
@@ -184,9 +195,17 @@ let projects = {
             "The final product ended up looking really cozy and warm. I was very happy with the work I delivered and now have a better understanding of how consistency is key when designing dashboards and userinterfaces like this.",
 
         gallery: [
-            "images/smarthome/placeholder.png",
-            "images/smarthome/placeholder.png",
-            "images/smarthome/placeholder.png"
+            "images/smarthome/smarthome-1.png",
+            "images/smarthome/smarthome-2.png",
+            "images/smarthome/smarthome-3.png",
+            "images/smarthome/smarthome-4.png",
+            "images/smarthome/smarthome-5.png",
+            "images/smarthome/smarthome-6.png",
+            "images/smarthome/smarthome-7.png",
+            "images/smarthome/smarthome-8.png",
+            "images/smarthome/smarthome-9.png",
+            "images/smarthome/smarthome-10.png",
+            "images/smarthome/smarthome-cover.png",
         ],
 
         video: "",
@@ -200,40 +219,46 @@ let projects = {
     "motion-project": {
 
         number: "05",
-        title: "Motion",
-        titleSecond: "Project.",
+        title: "Branding",
+        titleSecond: "",
 
-        intro: "An animation project focused on movement, timing and visual storytelling.",
+        intro: "A project on designing a brand and how branding works.",
 
         type: "Motion Graphics",
-        tools: "After Effects · Premiere Pro",
+        tools: "Illustrator · Indesign · Photoshop  · Figma",
         year: "2025",
 
         cover: "images/motion-project/cover.jpg",
 
         description:
-            "A motion graphics project focused on creating movement and visual storytelling.",
+            "This is a project that helped me understand the basics of how branding works, how to keep your brand recognizable and to always be consistent with your design.",
 
         description2:
-            "I worked with animation, timing and transitions to create a short visual sequence.",
+            "I worked with tools such as Illustrator and photoshop to design my brand for fake shoes. I then focused on making my brandbook with my brands own guidelines and applying them in example works such as a website, posts, etc.",
 
-        image1: "images/motion-project/image1.jpg",
+        image1: "images/brandbook/penguin.png",
 
         aboutVideo: "",
 
         research:
-            "I researched motion graphics and looked at different examples of animation and visual storytelling.",
+            "I researched what branding is and how bigger companies did their branding and how I could inspire myself and make myself different from them.",
 
         development:
-            "I developed the animation using After Effects and worked on timing, movement and transitions.",
+            "I designed everything always double checking whether everything was consistent. I would always check if my font was the same, if I was using the correct hexacolor codes, if my logo was always included, etc. I even started iterating variations of my logo until I found the one that fitted my brand the most",
 
         result:
-            "The final result is a short motion graphics piece combining animation and visual elements.",
+            "The final result is brandbook fully containing all the guidelines for my brand and how to apply them yourself correctly using various examples that I created following my own guidelines.",
 
         gallery: [
-            "images/motion-project/placeholder.png",
-            "images/motion-project/placeholder.png",
-            "images/motion-project/placeholder.png"
+            "images/brandbook/brandbook-1.png",
+            "images/brandbook/brandbook-2.png",
+            "images/brandbook/brandbook-3.png",
+            "images/brandbook/brandbook-4.png",
+            "images/brandbook/brandbook-5.png",
+            "images/brandbook/brandbook-6.png",
+            "images/brandbook/brandbook-7.png",
+            "images/brandbook/brandbook-8.png",
+            "images/brandbook/brandbook-cover.png"
         ],
 
         video: "",
