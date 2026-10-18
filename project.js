@@ -28,7 +28,7 @@ let projects = {
             "I started by studying the character and looking at references images, thinking of what type of animations I could add, etc.",
 
         development:
-            "The modelling was done in Maya and the texturing was put together in Substance Painter. In the end, I exported my model to Unity to make my animation.",
+            "The modelling was done in Maya and the texturing was put together in Substance Painter. When I fully modelled my character, I started shading the parts where every spiderman logo would be on to make it easier to texture paint in substance painter. When that was done I started skinpainting and rigging my character to add animations to it later in Unity. In the end, I exported my model to Unity to make my animation. ",
 
         result:
             "The final result is a short 3D animation featuring Miles Morales in full action in my first 3D animation!",
@@ -264,50 +264,59 @@ let projects = {
         video: "",
 
         reflection:
-            "This project helped me understand animation timing and how movement can be used to communicate an idea."
+            "This project helped me understand branding more and how its important to have consistent branding to keep your brand recognizable."
 
     },
     "3d-modelling-project": {
 
         number: "06",
-        title: "3D Modelling",
-        titleSecond: "Project.",
+        title: "Chibi,",
+        titleSecond: "an AI assistant.",
 
-        intro: "A 3D modelling project exploring the creation of detailed 3D assets.",
+        intro: "A webshopping app for the elderly with an AI assistant on standby.",
 
-        type: "3D Modelling",
-        tools: "Maya · Blender · Substance Painter",
+        type: "Web & app development",
+        tools: "JS · HTML · Figma",
         year: "2026",
 
         cover: "images/project8.jpg",
 
         description:
-            "A 3D modelling project where I explored modelling, materials and creating detailed 3D assets.",
+            "In this project, I was worked in a team of 4. We had to make a webshopping practicing app for our client Brussels Ouderen Platform. All of this had to be finished in the time span of 3 weeks.",
 
         description2:
-            "Here I will explain the ideas behind the project and the process I followed to create the final result.",
+            "We had to make it helpful for the elderly there and that they understand what their task is when going on our app. Therefore, we made our own AI assistant Chibi, to help them whenever they're stuck or if something isn't clear to them such as the payment page or the webshopping page in general. ",
 
-        image1: "",
+        image1: "images/chibi/chibi.png",
 
         aboutVideo: "",
 
         research:
-            "Here I will describe my research, references and initial ideas for this project.",
+            "We researched every aspect a real webshopping app had. We looked at examples such as Bol.com, Amazon, etc. We also researched how we could implement AI and initially went with an AI called Ollama.",
 
         development:
-            "Here I will explain how I modelled the assets, created materials and developed the project.",
+            "Based off of our research, we went to work and made wireframes and went further to designing them and making every page consistent. The userinterface had to be simple. We also trained our AI during the developing process of the webshop. We instructed Chibi with what to do and he would then help the user.",
 
         result:
-            "Here I will present the final result of my 3D modelling project.",
+            "In the end we came up with a very neat tool for the elderly to practice their shopping skills. If they ended up struggling, Chibi would always be there to help in case of any struggle.",
 
         gallery: [
-            "images/project8.jpg"
+            "images/chibi/chibilogo.png",
+            "images/chibi/chibi-1.png",
+            "images/chibi/chibi-2.png",
+            "images/chibi/chibi-3.png",
+            "images/chibi/chibi-4.png",
+            "images/chibi/chibi-5.png",
+            "images/chibi/chibi-6.png",
+            "images/chibi/chibi-7.png",
+            "images/chibi/chibi-8.png",
+            "images/chibi/chibi-9.png"
         ],
 
         video: "",
 
         reflection:
-            "Here I will reflect on what I learned and what I could improve in the future."
+            "I learned how to make a webshop app and improved my app developing skills through this projec. I further understood how AI could be so useful to many aspects for this webshop."
 
     },
 
@@ -315,38 +324,46 @@ let projects = {
     "game-development": {
 
         number: "07",
-        title: "Game Development",
-        titleSecond: "Project.",
+        title: "",
+        titleSecond: "GIGIFILMS",
 
-        intro: "An interactive project focused on gameplay and level design.",
+        intro: "A website made for movie producers to do casting calls, search for actors and share their work.",
 
-        type: "Game Development",
-        tools: "Unity · C#",
-        year: "2026",
+        type: "Web",
+        tools: "Figma · Illustrator · Photoshop · HTML",
+        year: "2025",
 
         cover: "images/project9.jpg",
 
         description:
-            "An interactive game project focused on gameplay mechanics, level design and creating an engaging experience.",
+            "In this project I worked together with a group of 4 other students. We had to make a website for GIGIFILMS which they could then use for casting calls, finding actors, for actors to find movies in production to work with & to show GIGIFILMS' recent movies.",
 
         description2:
-            "Here I will describe the concept of the game and the features I developed during the project.",
+            "We had to learn how to develop a website from scractch after coming to the consensus as to how we're going to design the website & how to implement a database into the website.",
 
-        image1: "",
+        image1: "images/gigi/cover-gigi.png",
 
         aboutVideo: "",
 
         research:
-            "Here I will explain how I developed the game concept and researched ideas for the gameplay.",
+            "We started brainstorming to understand who GIGIFILMS and started making moodboards for various concepts. We had a very abstract design at first and as second we have this very comfy design with the bold fonts in yellow.",
 
         development:
-            "Here I will describe how I worked on the game mechanics, scripting and level design.",
+            "After our first meeting with the client to pick a design, they went with the second option. We then went ahead and started developing the website. We split up the pages evenly so that everyone has the same workload. We implemented a database through JS and they could then use it to make their own casting calls. They could also make their own accounts to sign and login from.",
 
         result:
-            "Here I will present the final playable result of the game project.",
+            "In the end, the client was very satisfied with our website for them. The functionalities they asked for were great to them and they even complimented us as a great team that can translate wishes into an actual design they wanted!",
 
         gallery: [
-            "images/project9.jpg"
+            "images/gigi/cover-gigi.png",
+            "images/gigi/gigi-1.png",
+            "images/gigi/gigi-2.png",
+            "images/gigi/gigi-3.png",
+            "images/gigi/gigi-4.png",
+            "images/gigi/gigi-5.png",
+            "images/gigi/gigi-6.png",
+            "images/gigi/gigi-7.png",
+            "images/gigi/gigi-8.png",
         ],
 
         video: "",
@@ -360,44 +377,59 @@ let projects = {
     "graphic-design": {
 
         number: "08",
-        title: "Graphic Design",
-        titleSecond: "Project.",
+        title: "3D",
+        titleSecond: "Haunted house",
 
-        intro: "A visual design project exploring composition, typography and colour.",
+        intro: "A haunted house & character modelled and shaded in Maya as my first starter project.",
 
         type: "Graphic Design",
-        tools: "Photoshop · Illustrator · InDesign",
-        year: "2026",
+        tools: "Maya · Arnold",
+        year: "2025",
 
         cover: "images/project10.jpg",
 
         description:
-            "A graphic design project focused on visual communication, composition and creating engaging visuals.",
+            "I created my first Maya project, which was this haunted house with a ghost that comes around it every halloween.",
 
         description2:
-            "Here I will explain the design choices I made and how I developed the final visual.",
+            "I came up with the idea since my birthday ironically is on the day of halloween and I wanted to challenge myself making this house a tough but educational experience. I never knew I would fall in love with 3D developing this much after doing this project.",
 
-        image1: "",
+        image1: "images/house/house-cover.png",
 
         aboutVideo: "",
 
         research:
-            "Here I will describe my research, visual references and moodboard.",
+            "I started finding inspiration online from other haunted houses or spooky buildings to give me an idea how mine could look. I then put all of it inside a moodboard. I then went and sketched out everything that I wanted to include in my little house.",
 
         development:
-            "Here I will explain how I developed the design using my chosen graphic design tools.",
+            "I went on and started building the huise step by step. I had nothing to help me but the tips from my tutor, so I then went on youtube to find tutorials on how everything worked in Maya such as the keybinds to get familiar with everything. I then went and started extruding, removing faces or adding edge loops wherever it was necessary. I did not want to have too many faces on any of my shapes too keep it all low poly. After everything was modelled, I started using shaders to color in my models as what they should look like.",
 
         result:
-            "Here I will present the final visual design and explain the choices behind it.",
+            "In the end I rendered my house using Arnold and I was so proud of this project. I did notice the lighting was really dim so I then added some to not fully light up the scene but to also give it that spooky vibe. It was a fun experience!",
 
         gallery: [
-            "images/project10.jpg"
+            "images/house/house-2.png",
+            "images/house/house-3.png",
+            "images/house/house-4.png",
+            "images/house/house-5.png",
+            "images/house/house-6.png",
+            "images/house/house-7.png",
+            "images/house/house-8.png",
+            "images/house/house-9.png",
+            "images/house/house-10.png",
+            "images/house/house-11.png",
+            "images/house/house-12.png",
+            "images/house/house-13.png",
+            "images/house/house-14.png",
+            "images/house/house-15.png",
+            "images/house/house-1.png",
+            "images/house/house-cover.png"
         ],
 
         video: "",
 
         reflection:
-            "Here I will reflect on my design process and the skills I developed."
+            "I have learned the basics in Maya on how to model objects and how to add shaders to them. I also learned that lighting is important whenever you wanna render your scene out."
 
     },
 
@@ -408,7 +440,7 @@ let projects = {
         title: "UI/UX Design",
         titleSecond: "Project.",
 
-        intro: "A digital design project focused on user experience and interface design.",
+        intro: "A digital design project focused on user experience, interface layouts for a study guide for students.",
 
         type: "UI/UX Design",
         tools: "Figma",
@@ -417,32 +449,41 @@ let projects = {
         cover: "images/project11.jpg",
 
         description:
-            "A digital design project focused on interface layouts, usability and interactive prototypes.",
+            "I had to make a userinterface for a student platform where tips could be shared around studying, learning, & procrastination.",
 
         description2:
-            "Here I will explain the purpose of the interface and how I approached its design.",
+            "I had to do this with another student. Through this project we had to udnerstand how UI/UX designing is.",
 
-        image1: "",
+        image1: "images/learning/learning-7.png",
 
         aboutVideo: "",
 
         research:
-            "Here I will describe the target users, research and references that helped shape the interface.",
+            "We started mapping out the userflow in a mindmap and what pages you can access through it. We then brainstormed and started making 2 moodboards to find the style of our UI. We then compared our moodboards and started making one moodboard together using the inspiration from our seperate moodboards. We then made a styleguide so that we know what our titles and fonts are going to look like.",
 
         development:
-            "Here I will explain how I created the layouts, designed the interface and developed the prototype in Figma.",
+            "We then started working in Figma and made a first wireframe to already have an idea of how our UI & userflow will be mapped out. When that was finished, we started designing everything with the help of our styleguide. We even added animations in our UI to make it more dynamic and less static.",
 
         result:
-            "Here I will present the final interface and its main features.",
+            "In the end we completed our UI and the userflow was very easy to follow with a tab on the left you could click to go to any part of the platform and a progress bar as to how far you've come along in every chapter. It'll definitely motivate students more on how to study more efficiently!",
 
         gallery: [
-            "images/project11.jpg"
+            "images/learning/learning-5.png",
+            "images/learning/learning-6.png",
+            "images/learning/learning-7.png",
+            "images/learning/learning-8.png",
+            "images/learning/learning-9.png",
+            "images/learning/learning-cover.png",
+            "images/learning/learning-1.png",
+            "images/learning/learning-2.png",
+            "images/learning/learning-3.png",
+            "images/learning/learning-4.png",
         ],
 
         video: "",
 
         reflection:
-            "Here I will reflect on what I learned about interface design, usability and consistency."
+            "I have learned how to map out a userflow and how to make a styleguide to then use it as a tool to design the rest of a UI to make the user experience more pleasant."
 
     } 
 };
