@@ -34,11 +34,18 @@ let projects = {
             "The final result is a short 3D animation featuring Miles Morales in full action in my first 3D animation!",
 
         gallery: [
-            "images/modelling/placeholder.png",
-            "images/modelling/placeholder.png",
-            "images/modelling/placeholder.png",
-            "images/modelling/placeholder.png",
-            "images/modelling/placeholder.png"
+            "images/modelling/modelling-2.png",
+            "images/modelling/modelling-1.png",
+            "images/modelling/modelling-3.png",
+            "images/modelling/modelling-4.png",
+            "images/modelling/modelling-5.png",
+            "images/modelling/modelling-6.png",
+            "images/modelling/modelling-7.png",
+            "images/modelling/modelling-8.png",
+            "images/modelling/modelling-9.png",
+            "images/modelling/modelling-10.png",
+            "images/modelling/modelling-11.png",
+            "images/modelling/modelling-cover.png",        
         ],
 
         video: "CjjZdUxsg0",
@@ -234,8 +241,185 @@ let projects = {
         reflection:
             "This project helped me understand animation timing and how movement can be used to communicate an idea."
 
-    }
+    },
+    "3d-modelling-project": {
 
+        number: "06",
+        title: "3D Modelling",
+        titleSecond: "Project.",
+
+        intro: "A 3D modelling project exploring the creation of detailed 3D assets.",
+
+        type: "3D Modelling",
+        tools: "Maya · Blender · Substance Painter",
+        year: "2026",
+
+        cover: "images/project8.jpg",
+
+        description:
+            "A 3D modelling project where I explored modelling, materials and creating detailed 3D assets.",
+
+        description2:
+            "Here I will explain the ideas behind the project and the process I followed to create the final result.",
+
+        image1: "",
+
+        aboutVideo: "",
+
+        research:
+            "Here I will describe my research, references and initial ideas for this project.",
+
+        development:
+            "Here I will explain how I modelled the assets, created materials and developed the project.",
+
+        result:
+            "Here I will present the final result of my 3D modelling project.",
+
+        gallery: [
+            "images/project8.jpg"
+        ],
+
+        video: "",
+
+        reflection:
+            "Here I will reflect on what I learned and what I could improve in the future."
+
+    },
+
+
+    "game-development": {
+
+        number: "07",
+        title: "Game Development",
+        titleSecond: "Project.",
+
+        intro: "An interactive project focused on gameplay and level design.",
+
+        type: "Game Development",
+        tools: "Unity · C#",
+        year: "2026",
+
+        cover: "images/project9.jpg",
+
+        description:
+            "An interactive game project focused on gameplay mechanics, level design and creating an engaging experience.",
+
+        description2:
+            "Here I will describe the concept of the game and the features I developed during the project.",
+
+        image1: "",
+
+        aboutVideo: "",
+
+        research:
+            "Here I will explain how I developed the game concept and researched ideas for the gameplay.",
+
+        development:
+            "Here I will describe how I worked on the game mechanics, scripting and level design.",
+
+        result:
+            "Here I will present the final playable result of the game project.",
+
+        gallery: [
+            "images/project9.jpg"
+        ],
+
+        video: "",
+
+        reflection:
+            "Here I will explain what I learned about game development and what I would improve next time."
+
+    },
+
+
+    "graphic-design": {
+
+        number: "08",
+        title: "Graphic Design",
+        titleSecond: "Project.",
+
+        intro: "A visual design project exploring composition, typography and colour.",
+
+        type: "Graphic Design",
+        tools: "Photoshop · Illustrator · InDesign",
+        year: "2026",
+
+        cover: "images/project10.jpg",
+
+        description:
+            "A graphic design project focused on visual communication, composition and creating engaging visuals.",
+
+        description2:
+            "Here I will explain the design choices I made and how I developed the final visual.",
+
+        image1: "",
+
+        aboutVideo: "",
+
+        research:
+            "Here I will describe my research, visual references and moodboard.",
+
+        development:
+            "Here I will explain how I developed the design using my chosen graphic design tools.",
+
+        result:
+            "Here I will present the final visual design and explain the choices behind it.",
+
+        gallery: [
+            "images/project10.jpg"
+        ],
+
+        video: "",
+
+        reflection:
+            "Here I will reflect on my design process and the skills I developed."
+
+    },
+
+
+    "ui-ux-design": {
+
+        number: "09",
+        title: "UI/UX Design",
+        titleSecond: "Project.",
+
+        intro: "A digital design project focused on user experience and interface design.",
+
+        type: "UI/UX Design",
+        tools: "Figma",
+        year: "2026",
+
+        cover: "images/project11.jpg",
+
+        description:
+            "A digital design project focused on interface layouts, usability and interactive prototypes.",
+
+        description2:
+            "Here I will explain the purpose of the interface and how I approached its design.",
+
+        image1: "",
+
+        aboutVideo: "",
+
+        research:
+            "Here I will describe the target users, research and references that helped shape the interface.",
+
+        development:
+            "Here I will explain how I created the layouts, designed the interface and developed the prototype in Figma.",
+
+        result:
+            "Here I will present the final interface and its main features.",
+
+        gallery: [
+            "images/project11.jpg"
+        ],
+
+        video: "",
+
+        reflection:
+            "Here I will reflect on what I learned about interface design, usability and consistency."
+
+    } 
 };
 
 
@@ -294,15 +478,6 @@ if (!project) {
         project.year;
 
 
-    /* =========================
-       COVER
-    ========================== */
-
-    document.getElementById("project-cover").src =
-        project.cover;
-
-    document.getElementById("project-cover").alt =
-        project.title;
 
 
     /* =========================
