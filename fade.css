@@ -23,3 +23,50 @@
         transition: none;
     }
 }
+
+
+/* =========================
+   PROJECT TITLE ANIMATION
+========================= */
+
+.project-hero h1 {
+    overflow: hidden;
+}
+
+.project-hero h1,
+.project-hero .project-intro,
+.project-hero .project-meta {
+    animation: heroFadeUp 0.9s ease both;
+}
+
+.project-hero h1 {
+    animation-delay: 0.15s;
+}
+
+.project-hero .project-intro {
+    animation-delay: 0.35s;
+}
+
+.project-hero .project-meta {
+    animation-delay: 0.5s;
+}
+
+@keyframes heroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-hero h1,
+    .project-hero .project-intro,
+    .project-hero .project-meta {
+        animation: none;
+    }
+}

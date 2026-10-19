@@ -3,32 +3,32 @@
    SHARED SCROLL REVEAL
 ========================= */
 
-// Works on both the homepage and projects page
 const fadeElements = document.querySelectorAll(
-    ".project, .project-card"
+    ".project, .project-card, .project-description, .project-process, .project-reflection, .project-end"
 );
 
-const fadePrefersReducedMotion = window.matchMedia(
+const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
 ).matches;
 
-if (fadePrefersReducedMotion) {
+// Show everything immediately if reduced motion is preferred
+if (prefersReducedMotion || !("IntersectionObserver" in window)) {
     fadeElements.forEach((element) => {
         element.classList.add("project-visible");
     });
 } else {
     const fadeObserver = new IntersectionObserver(
-        (entries) => {
+        (entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add("project-visible");
-                    fadeObserver.unobserve(entry.target);
+                    observer.unobserve(entry.target);
                 }
             });
         },
         {
             threshold: 0.12,
-            rootMargin: "0px 0px -50px 0px"
+            rootMargin: "0px 0px -40px 0px"
         }
     );
 

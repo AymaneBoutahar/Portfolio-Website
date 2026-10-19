@@ -654,6 +654,7 @@ if (!project) {
 
     let galleryImages =
         document.querySelectorAll(".gallery-image");
+        
 
 
     /* =========================

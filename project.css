@@ -428,19 +428,25 @@ img {
 
 /* GALLERY IMAGES */
 
+
 .gallery-image {
     flex: 0 0 30%;
     height: 280px;
-
     object-fit: cover;
-
     cursor: pointer;
-    transition: transform 0.3s ease;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+
+    filter: brightness(0.9);
 }
 
 .gallery-image:hover {
-    transform: scale(0.98);
+    transform: scale(1.03);
+    filter: brightness(1);
 }
+
 
 
 /* GALLERY ARROWS */
@@ -1403,5 +1409,48 @@ footer a:hover::after {
 @media (min-width: 901px) {
     .mobile-menu {
         display: none;
+    }
+}
+
+
+/* =========================
+   GALLERY HEADING
+========================= */
+
+.gallery-heading {
+    margin-bottom: 35px;
+}
+
+.gallery-heading .section-label {
+    margin-bottom: 15px;
+}
+
+.gallery-heading h2 {
+    font-size: clamp(40px, 6vw, 75px);
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.gallery-heading h2 span {
+    color: #C9A227;
+}
+
+
+/* =========================
+   AUTOMATIC GALLERY SCROLL
+========================= */
+
+.gallery-track {
+    scroll-behavior: auto;
+}
+
+/* Pause automatic scrolling when the visitor interacts */
+.project-gallery:hover .gallery-track {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery-track {
+        scroll-behavior: auto;
     }
 }
