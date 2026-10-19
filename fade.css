@@ -1,0 +1,25 @@
+/* =========================
+   SHARED SCROLL REVEAL
+========================= */
+
+.project-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.project-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-hidden,
+    .project-visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
