@@ -1,7 +1,3 @@
-// =========================
-// PROJECT SCROLL ANIMATION
-// =========================
-
 const projects = document.querySelectorAll(".project");
 
 const prefersReducedMotion = window.matchMedia(
