@@ -3,70 +3,103 @@
 ========================= */
 
 .project-hidden {
-    opacity: 0;
-    transform: translateY(50px);
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
+	opacity: 0;
+	transform: translateY(50px);
+	transition:
+		opacity 0.8s ease,
+		transform 0.8s ease;
 }
 
 .project-visible {
-    opacity: 1;
-    transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .project-hidden,
-    .project-visible {
-        opacity: 1;
-        transform: none;
-        transition: none;
-    }
+	.project-hidden,
+	.project-visible {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
 }
-
 
 /* =========================
    PROJECT TITLE ANIMATION
 ========================= */
 
 .project-hero h1 {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .project-hero h1,
 .project-hero .project-intro,
 .project-hero .project-meta {
-    animation: heroFadeUp 0.9s ease both;
+	animation: heroFadeUp 0.9s ease both;
 }
 
 .project-hero h1 {
-    animation-delay: 0.15s;
+	animation-delay: 0.15s;
 }
 
 .project-hero .project-intro {
-    animation-delay: 0.35s;
+	animation-delay: 0.35s;
 }
 
 .project-hero .project-meta {
-    animation-delay: 0.5s;
+	animation-delay: 0.5s;
 }
 
 @keyframes heroFadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(35px);
-    }
+	from {
+		opacity: 0;
+		transform: translateY(35px);
+	}
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .project-hero h1,
-    .project-hero .project-intro,
-    .project-hero .project-meta {
-        animation: none;
-    }
+	.project-hero h1,
+	.project-hero .project-intro,
+	.project-hero .project-meta {
+		animation: none;
+	}
+}
+
+.hero-content h1 {
+	overflow: hidden;
+}
+
+.hero-content h1,
+.hero-content .hero-description,
+.hero-content .box-2 {
+	animation: heroFadeUp 0.9s ease both;
+}
+
+.hero-content h1 {
+	animation-delay: 0.15s;
+}
+
+.hero-content .hero-description {
+	animation-delay: 0.35s;
+}
+
+.hero-content .box-2 {
+	animation-delay: 0.5s;
+}
+
+@keyframes heroFadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(35px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
