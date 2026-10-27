@@ -53,6 +53,12 @@ img {
     color: #C9A227;
 }
 
+.logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
 .navbar nav {
     display: flex;
     gap: 30px;

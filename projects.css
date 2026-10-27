@@ -70,6 +70,12 @@ mix-blend-mode: normal;
 
 }
 
+.logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
 /* NAV */
 
 .navbar nav {

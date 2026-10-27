@@ -61,6 +61,11 @@ a {
     z-index: 102;
 }
 
+.logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
 
 /* DESKTOP NAV */
 
