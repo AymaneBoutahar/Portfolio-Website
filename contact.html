@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact — Aymane Boutahar</title>
+
+    <!-- POPPINS FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- EXISTING WEBSITE CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fade.css">
+
+    <!-- CONTACT PAGE CSS -->
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="icon" type="image/x-icon" href="images/logo/Logo portfolio.png">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <button
+            class="menu-toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <a href="index.html" class="logo">
+            <img src="images/logo/Logo portfolio.png" alt="Aymane Boutahar">
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Work</a>
+            <a href="index.html#about">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <!-- MOBILE MENU -->
+
+        <div class="mobile-menu">
+
+            <div class="mobile-menu-content">
+
+                <p class="small-text">NAVIGATION</p>
+
+                <a href="projects.html">
+                    <span>Work</span>
+                    <small>01</small>
+                </a>
+
+                <a href="index.html#about">
+                    <span>About Me</span>
+                    <small>02</small>
+                </a>
+
+                <a href="index.html#skills">
+                    <span>My Skills</span>
+                    <small>03</small>
+                </a>
+
+                <a href="contact.html">
+                    <span>Contact</span>
+                    <small>04</small>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTACT PAGE -->
+
+    <main>
+
+        <section class="contact-page">
+
+            <div class="contact-heading">
+
+                <h1>
+                    Let's talk<span>.</span>
+                </h1>
+
+                <p>
+                    Have a question, an idea or an opportunity?
+                    I'd love to hear from you.
+                </p>
+
+            </div>
+
+
+            <div class="contact-content">
+
+                <!-- CONTACT INFORMATION -->
+
+                <div class="contact-info">
+
+                    <h2>
+                        Get in<br>
+                        touch.
+                    </h2>
+
+                    <p>
+                        Whether it's about an internship, a project
+                        or a possible collaboration, feel free to
+                        send me a message.
+                    </p>
+
+                    <div class="contact-detail">
+
+                        <span>EMAIL</span>
+
+                        <a href="mailto:boutaharaymane@gmail.com">
+                            boutaharaymane@gmail.com
+                        </a>
+
+                    </div>
+
+                    <div class="contact-detail">
+
+                        <span>LOCATION</span>
+
+                        <p>Brussels, Belgium</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+
+                <form class="contact-form" action="https://formspree.io/f/xyeejazd" method="POST">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="first-name">First name *</label>
+
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                placeholder="Your first name"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="last-name">Last name *</label>
+
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                placeholder="Your last name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">Email address *</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="your@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">Subject *</label>
+
+                        <select id="subject" name="subject" required>
+
+                            <option value="" disabled selected>
+                                Select a subject
+                            </option>
+
+                            <option value="Internship">
+                                Internship opportunity
+                            </option>
+
+                            <option value="Collaboration">
+                                Collaboration
+                            </option>
+
+                            <option value="Project">
+                                Project inquiry
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">Your message *</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="contact-submit">
+                        Send message <span>↗</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>© 2026 Aymane Boutahar</p>
+
+        <div>
+
+            <a href="https://www.instagram.com/m_lclm/">Instagram</a>
+
+            <a href="https://be.linkedin.com/in/aymane-boutahar-%F0%9F%87%B5%F0%9F%87%B8-83a304362">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/AymaneBoutahar">GitHub</a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- EXISTING JAVASCRIPT -->
+
+    <script src="script.js"></script>
+    <script src="hamburger.js"></script>
+    <script src="fade.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
