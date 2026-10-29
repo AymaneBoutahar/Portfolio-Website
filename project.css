@@ -149,7 +149,7 @@ img {
 .project-hero h1 {
     font-size: clamp(65px, 11vw, 160px);
 
-    line-height: 0.85;
+    line-height: 1;
 
     letter-spacing: -7px;
 

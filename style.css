@@ -872,7 +872,7 @@ a {
 .contact h2 {
     font-size: clamp(60px, 10vw, 150px);
 
-    line-height: 0.9;
+    line-height: 1;
 
     letter-spacing: -6px;
 }
