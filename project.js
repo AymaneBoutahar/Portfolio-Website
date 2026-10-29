@@ -71,7 +71,7 @@ let projects = {
         cover: "images/gaming/gaming-cover.png",
 
         description:
-            "I created a dungeon game demo where the player has to find their way out of the dungeon by finding the keys deep inside it.",
+            "I created a dungeon game demo together with another student where the player has to find their way out of the dungeon by finding the keys deep inside it.",
 
         description2:
             "This project helped me understand how to map out layers of a level, work with game logic & how to animate assets in the game scene.",
@@ -81,10 +81,10 @@ let projects = {
         aboutVideo: "",
 
         research:
-            "I started brainstorming on game ideas and levels that could be implemented in our game. I was leaning towards a The legend of Zelda genre of game. From there I started making a moodboard to show I want my first game to have.",
+            "We started brainstorming on game ideas and levels that could be implemented in our game. We were leaning towards a The legend of Zelda genre of game. From there we started making a moodboard to show we want our first game to have.",
 
         development:
-            "I started importing the neccesary assets that I thought would help boost the vibe of the game and started scripting the logic after my dungeon level was made.",
+            "We started importing the neccesary assets that we thought would help boost the vibe of the game and started scripting the logic after my dungeon level was made.",
 
         result:
             "The final result was my first ever 3D game demo which featured similar mechanics as in any other The legend of Zelda game such as the 3 hearts, a sword to attack, interactable NPC's, enemies & a final boss.",
@@ -176,7 +176,7 @@ let projects = {
         cover: "images/smarthome/smarthome-cover.png",
 
         description:
-            "A smarthome dashboard that contains information on your home energy use, security alarms, statistics of your weekly usages, etc.",
+            "A smarthome dashboard that contains information on your home energy use, security alarms, statistics of your weekly usages, etc. This was done in group together with another student.",
 
         description2:
             "This project was a tiny bit challenging as it required a lot of consistency and recognizable visual identity. I love the end result I came up with in the end.",
@@ -186,13 +186,13 @@ let projects = {
         aboutVideo: "",
 
         research:
-            "I researched what concurrent smarthomes have on their dashboard and what they view on the home screen. I then made a moodboard to show how I wanted my smarthome UI to look like and the feel I wanted to give it.",
+            "We researched what concurrent smarthomes have on their dashboard and what they view on the home screen. We then made a moodboard to show how we wanted my smarthome UI to look like and the feel we wanted to give it.",
 
         development:
-            "I then started working in figma and experimented with different tools to add that glassy effect on the buttons and added variables for button animations wherever needed. I used my moodboard as inspiration tool.",
+            "We then started working in figma and experimented with different tools to add that glassy effect on the buttons and added variables for button animations wherever needed. We used my moodboard as inspiration tool.",
 
         result:
-            "The final product ended up looking really cozy and warm. I was very happy with the work I delivered and now have a better understanding of how consistency is key when designing dashboards and userinterfaces like this.",
+            "The final product ended up looking really cozy and warm. We was very happy with the work we delivered and now have a better understanding of how consistency is key when designing dashboards and userinterfaces like this.",
 
         gallery: [
             "images/smarthome/smarthome-1.png",
@@ -282,7 +282,7 @@ let projects = {
         cover: "images/project8.jpg",
 
         description:
-            "In this project, I was worked in a team of 4. We had to make a webshopping practicing app for our client Brussels Ouderen Platform. All of this had to be finished in the time span of 3 weeks.",
+            "In this project, I worked in a team of 4. We had to make a webshopping practicing app for our client Brussels Ouderen Platform. All of this had to be finished in the time span of 3 weeks.",
 
         description2:
             "We had to make it helpful for the elderly there and that they understand what their task is when going on our app. Therefore, we made our own AI assistant Chibi, to help them whenever they're stuck or if something isn't clear to them such as the payment page or the webshopping page in general. ",

@@ -17,6 +17,7 @@ body {
     background: #F4F1E8;
     color: #0A3158;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 a {
