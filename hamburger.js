@@ -9,6 +9,7 @@ const mobileLinks = document.querySelectorAll(".mobile-menu a");
 
 if (menuToggle && mobileMenu) {
 
+    
     // OPEN AND CLOSE MENU
     menuToggle.addEventListener("click", () => {
 
