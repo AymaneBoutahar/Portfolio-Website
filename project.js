@@ -45,7 +45,7 @@ let projects = {
             "images/modelling/modelling-9.png",
             "images/modelling/modelling-10.png",
             "images/modelling/modelling-11.png",
-            "images/modelling/modelling-cover.png",        
+            "images/modelling/modelling-cover.png"     
         ],
 
         video: "CjjZdUxsg0",
@@ -100,10 +100,7 @@ let projects = {
             "images/gaming/gaming-8.png",
             "images/gaming/gaming-9.png",
             "images/gaming/gaming-10.png",
-            "images/gaming/gaming-cover.png",
-
-            
-            
+            "images/gaming/gaming-cover.png"
         ],
 
         video: "",
@@ -132,7 +129,7 @@ let projects = {
             "A visual design project where I had to find a fictionary problem and had to make a poster to visually show the problem and what the solution to that problem could be.",
 
         description2:
-            "I took gingy from shrek as an example that he keeps getting bullied by lord Farquad. I then started thinking of how I can show a proper solution and how to visually show the problem.",
+            "I took Gingy from Shrek as an example that he keeps getting bullied by Lord Farquad. I then started thinking of how I can show a proper solution and how to visually show the problem.",
 
         image1: "images/duff/duff-box.png",
 
@@ -142,7 +139,7 @@ let projects = {
             "I started by sketching ways to show gingy getting hurt/bullied. I even started looking on pinterest for illustrations and made a moodboard out of it to help me further.",
 
         development:
-            "I started drawing out the poster in Illustrator and imported it into Indesign once everything was done. I then added the title text 'swallow' to make it clear gingy is being silenced away by Farquad. ",
+            "I started drawing out the poster in Illustrator and imported it into Indesign once everything was done. I then added the title text 'swallow' to make it clear Gingy is being silenced away by Farquad. ",
 
         result:
             "The final result is a visual poster showing gingy being eaten by lord Farquad with the solution being anti-swallow glaze.",
@@ -205,7 +202,7 @@ let projects = {
             "images/smarthome/smarthome-8.png",
             "images/smarthome/smarthome-9.png",
             "images/smarthome/smarthome-10.png",
-            "images/smarthome/smarthome-cover.png",
+            "images/smarthome/smarthome-cover.png"
         ],
 
         video: "",
@@ -363,7 +360,7 @@ let projects = {
             "images/gigi/gigi-5.png",
             "images/gigi/gigi-6.png",
             "images/gigi/gigi-7.png",
-            "images/gigi/gigi-8.png",
+            "images/gigi/gigi-8.png"
         ],
 
         video: "",
@@ -477,7 +474,7 @@ let projects = {
             "images/learning/learning-1.png",
             "images/learning/learning-2.png",
             "images/learning/learning-3.png",
-            "images/learning/learning-4.png",
+            "images/learning/learning-4.png"
         ],
 
         video: "",
@@ -516,9 +513,6 @@ if (!project) {
     /* =========================
        HERO
     ========================== */
-
-    document.getElementById("project-number").textContent =
-        project.number + " — PROJECT";
 
     document.getElementById("project-title").innerHTML =
         project.title +
