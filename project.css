@@ -31,9 +31,10 @@ img {
 ========================= */
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+
     width: 100%;
 
     display: flex;
@@ -45,6 +46,15 @@ img {
     z-index: 100;
 
     color: #F4F1E8;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(6, 20, 38, 0.95) 0%,
+        rgba(10, 49, 88, 0.75) 50%,
+        rgba(10, 49, 88, 0) 100%
+    );
+
+    transition: background 0.3s ease;
 }
 
 .logo {
@@ -65,8 +75,11 @@ img {
 }
 
 .navbar nav a {
-    position: relative;
     font-size: 14px;
+    position: relative;
+    color: #F4F1E8;
+
+    transition: color 0.3s ease;
 }
 
 .navbar nav a::after {

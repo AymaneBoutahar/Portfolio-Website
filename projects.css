@@ -34,26 +34,30 @@ NAVIGATION
 ========================= */
 
 .navbar {
-position: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
 
+    width: 100%;
 
-top: 0;
-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-width: 100%;
+    padding: 25px 5%;
 
-display: flex;
-justify-content: space-between;
-align-items: center;
+    z-index: 100;
 
-padding: 25px 5%;
+    color: #F4F1E8;
 
-z-index: 100;
+    background: linear-gradient(
+        to bottom,
+        rgba(6, 20, 38, 0.95) 0%,
+        rgba(10, 49, 88, 0.75) 50%,
+        rgba(10, 49, 88, 0) 100%
+    );
 
-color: #F4F1E8;
-
-
-
+    transition: background 0.3s ease;
 }
 
 /* LOGO */
@@ -79,21 +83,16 @@ mix-blend-mode: normal;
 /* NAV */
 
 .navbar nav {
-display: flex;
-
-
-gap: 30px;
-
-
+    display: flex;
+    gap: 30px;
 }
 
 .navbar nav a {
-position: relative;
+    font-size: 14px;
+    position: relative;
+    color: #F4F1E8;
 
-
-font-size: 14px;
-
-
+    transition: color 0.3s ease;
 }
 
 /* NAV HOVER */

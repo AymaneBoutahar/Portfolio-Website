@@ -45,7 +45,16 @@ a {
 
     z-index: 100;
 
-    color: white;
+    color: #F4F1E8;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(6, 20, 38, 0.95) 0%,
+        rgba(10, 49, 88, 0.75) 50%,
+        rgba(10, 49, 88, 0) 100%
+    );
+
+    transition: background 0.3s ease;
 }
 
 
@@ -73,14 +82,14 @@ a {
 .navbar nav {
     display: flex;
     gap: 30px;
-
-    mix-blend-mode: difference;
 }
 
 .navbar nav a {
     font-size: 14px;
-
     position: relative;
+    color: #F4F1E8;
+
+    transition: color 0.3s ease;
 }
 
 
