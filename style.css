@@ -8,6 +8,13 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -17,7 +24,6 @@ body {
     background: #F4F1E8;
     color: #0A3158;
     line-height: 1.5;
-    overflow-x: hidden;
 }
 
 a {
@@ -41,7 +47,7 @@ a {
     justify-content: space-between;
     align-items: center;
 
-    padding: 25px 5%;
+    padding: 10px 5%;
 
     z-index: 100;
 
@@ -72,7 +78,7 @@ a {
 }
 
 .logo img {
-    width: 120px;
+    width: 100px;
     height: auto;
     display: block;
 }
@@ -640,11 +646,22 @@ a {
 
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     column-gap: 40px;
+    width: 100%;
+    min-width: 0;
 }
 
+.project {
+    width: 100%;
+    min-width: 0;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 100%;
+}
 
 .section-header {
     grid-column: 1 / -1;
@@ -702,16 +719,15 @@ a {
 
 .project-info {
     display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 40px;
-
     padding-top: 25px;
-
     border-top: 1px solid #0A3158;
-
     margin-top: 20px;
+}
+
+.project-info > div {
+    min-width: 0;
 }
 
 
@@ -843,8 +859,7 @@ a {
 
 .skill-list > div {
     display: grid;
-
-    grid-template-columns: 80px 1fr 1fr;
+    grid-template-columns: 80px minmax(0, 1fr) minmax(0, 1fr);
 
     padding: 30px 0;
 
@@ -932,7 +947,7 @@ footer div {
     /* Navigation */
 
     .navbar {
-        padding: 25px 6%;
+        padding: 15px 6%;
 
         justify-content: space-between;
     }
@@ -1022,7 +1037,7 @@ footer div {
     /* Navigation */
 
     .navbar {
-        padding: 20px 6%;
+        padding: 12px 6%;
     }
 
 
@@ -1229,7 +1244,7 @@ footer div {
 @media (max-width: 400px) {
 
     .navbar {
-        padding: 18px 6%;
+        padding: 10px 6%;
     }
 
 
@@ -1317,3 +1332,17 @@ footer div {
     }
 
 }
+
+    /* PREVENT HORIZONTAL SCROLLING */
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    img,
+    video,
+    iframe {
+        max-width: 100%;
+    }
