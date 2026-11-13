@@ -6,7 +6,7 @@ let projects = {
         title: "A Miles Morales",
         titleSecond: "Animation.",
 
-        intro: "A 3D animation of Miles Morales in the city",
+        intro: "A 3D animation of Miles Morales in the city.",
 
         type: "3D modelling & Animation",
         tools: "Maya · Unity · Adobe Substance Painter",
@@ -17,23 +17,23 @@ let projects = {
         heroGif: "images/modelling/MilesMorales_City.gif",
 
         description:
-            "A 3D animation project created during my studies. This project helped me understand how to fully model, rig, & texture a character in Maya.",
+            "A 3D animation project I created during my studies. This project helped me understand how to model, rig and texture a character in Maya.",
 
         description2:
-            "I started thinking of what character I wanted to model and chose Miles. It was a tough journey to only use quads for my model but it turned out pretty cool in the end.",
+            "I started thinking about which character I wanted to model and chose Miles. It was a challenge to use only quads for my model, but it turned out pretty cool in the end.",
 
         image1: "images/modelling/modelling-box.png",
 
         aboutVideo: "",
 
         research:
-            "I started by studying the character and looking at references images, thinking of what type of animations I could add, etc.",
+            "I started by studying the character and looking at reference images. I also thought about what types of animations I could add.",
 
         development:
-            "The modelling was done in Maya and the texturing was put together in Substance Painter. When I fully modelled my character, I started shading the parts where every spiderman logo would be on to make it easier to texture paint in substance painter. When that was done I started skinpainting and rigging my character to add animations to it later in Unity. In the end, I exported my model to Unity to make my animation. ",
+            "I modelled the character in Maya and worked on the textures in Substance Painter. Once I had finished modelling, I started shading the parts where the Spider-Man logos would be. This made it easier to texture the character in Substance Painter. After that, I started skinning and rigging my character so I could animate it later in Unity. In the end, I exported my model to Unity to create the animation.",
 
         result:
-            "The final result is a short 3D animation featuring Miles Morales in full action in my first 3D animation!",
+            "The final result is my first 3D animation, featuring Miles Morales in action!",
 
         gallery: [
             "images/modelling/modelling-2.png",
@@ -53,7 +53,7 @@ let projects = {
         video: "CjjZdUxsg0",
 
         reflection:
-            "This project helped me understand the basics of fully modelling and rigging a character to then export it into Unity for the final animation. It was a tough but fun journey and would love to continue on working on projects like this in the future."
+            "This project helped me understand the basics of modelling and rigging a character before exporting it to Unity for the final animation. It was a tough but fun journey, and I would love to continue working on projects like this in the future."
 
     },
 
@@ -64,7 +64,7 @@ let projects = {
         title: "Whispers of",
         titleSecond: "The Duat.",
 
-        intro: "My first 3D game development project & introduction to Unity",
+        intro: "My first 3D game development project and introduction to Unity.",
 
         type: "3D Game development",
         tools: "Unity · Visual Studio Code",
@@ -88,7 +88,7 @@ let projects = {
             "We started brainstorming on game ideas and levels that could be implemented in our game. We were leaning towards a The legend of Zelda genre of game. From there we started making a moodboard to show we want our first game to have.",
 
         development:
-            "We started importing the neccesary assets that we thought would help boost the vibe of the game and started scripting the logic after my dungeon level was made.",
+            "We started importing the necessary assets that we thought would help boost the vibe of the game and started scripting the logic after my dungeon level was made.",
 
         result:
             "The final result was my first ever 3D game demo which featured similar mechanics as in any other The legend of Zelda game such as the 3 hearts, a sword to attack, interactable NPC's, enemies & a final boss.",
@@ -124,29 +124,29 @@ let projects = {
         intro: "A graphic design project about visual identity and campaign posters",
 
         type: "Graphic Design",
-        tools: "Illustrator · Photoshop · Indesign",
+        tools: "Illustrator · Photoshop · InDesign",
         year: "2026",
 
         cover: "images/duff/duff-cover.png",
 
         description:
-            "A visual design project where I had to find a fictionary problem and had to make a poster to visually show the problem and what the solution to that problem could be.",
+            "A visual design project where I had to find a fictional problem and had to make a poster to visually show the problem and what the solution to that problem could be.",
 
         description2:
-            "I took Gingy from Shrek as an example that he keeps getting bullied by Lord Farquad. I then started thinking of how I can show a proper solution and how to visually show the problem.",
+            "I took Gingy from Shrek as an example that he keeps getting bullied by Lord Farquaad. I then started thinking of how I can show a proper solution and how to visually show the problem.",
 
         image1: "images/duff/duff-box.png",
 
         aboutVideo: "",
 
         research:
-            "I started by sketching ways to show gingy getting hurt/bullied. I even started looking on pinterest for illustrations and made a moodboard out of it to help me further.",
+            "I started by sketching ways to show gingy getting hurt/bullied. I even started looking on Pinterest for illustrations and made a moodboard out of it to help me further.",
 
         development:
-            "I started drawing out the poster in Illustrator and imported it into Indesign once everything was done. I then added the title text 'swallow' to make it clear Gingy is being silenced away by Farquad. ",
+            "I started drawing out the poster in Illustrator and imported it into InDesign once everything was done. I then added the title text 'swallow' to make it clear Gingy is being silenced away by Farquaad. ",
 
         result:
-            "The final result is a visual poster showing gingy being eaten by lord Farquad with the solution being anti-swallow glaze.",
+            "The final result is a visual poster showing gingy being eaten by lord Farquaad with the solution being anti-swallow glaze.",
 
         gallery: [
             "images/duff/duff-cover.png",
@@ -190,7 +190,7 @@ let projects = {
             "We researched what concurrent smarthomes have on their dashboard and what they view on the home screen. We then made a moodboard to show how we wanted my smarthome UI to look like and the feel we wanted to give it.",
 
         development:
-            "We then started working in figma and experimented with different tools to add that glassy effect on the buttons and added variables for button animations wherever needed. We used my moodboard as inspiration tool.",
+            "We then started working in Figma and experimented with different tools to add that glassy effect on the buttons and added variables for button animations wherever needed. We used my moodboard as inspiration tool.",
 
         result:
             "The final product ended up looking really cozy and warm. We was very happy with the work we delivered and now have a better understanding of how consistency is key when designing dashboards and userinterfaces like this.",
@@ -226,7 +226,7 @@ let projects = {
         intro: "A project on designing a brand and how branding works.",
 
         type: "Motion Graphics",
-        tools: "Illustrator · Indesign · Photoshop  · Figma",
+        tools: "Illustrator · InDesign · Photoshop  · Figma",
         year: "2025",
 
         cover: "images/motion-project/cover.jpg",
@@ -235,7 +235,7 @@ let projects = {
             "This is a project that helped me understand the basics of how branding works, how to keep your brand recognizable and to always be consistent with your design.",
 
         description2:
-            "I worked with tools such as Illustrator and photoshop to design my brand for fake shoes. I then focused on making my brandbook with my brands own guidelines and applying them in example works such as a website, posts, etc.",
+            "I worked with tools such as Illustrator and Photoshop to design my brand for fake shoes. I then focused on making my brandbook with my brands own guidelines and applying them in example works such as a website, posts, etc.",
 
         image1: "images/brandbook/penguin.png",
 
@@ -245,7 +245,7 @@ let projects = {
             "I researched what branding is and how bigger companies did their branding and how I could inspire myself and make myself different from them.",
 
         development:
-            "I designed everything always double checking whether everything was consistent. I would always check if my font was the same, if I was using the correct hexacolor codes, if my logo was always included, etc. I even started iterating variations of my logo until I found the one that fitted my brand the most",
+            "I designed everything always double checking whether everything was consistent. I would always check if my font was the same, if I was using the correct hex color codes, if my logo was always included, etc. I even started iterating variations of my logo until I found the one that fitted my brand the most",
 
         result:
             "The final result is brandbook fully containing all the guidelines for my brand and how to apply them yourself correctly using various examples that I created following my own guidelines.",
@@ -317,7 +317,7 @@ let projects = {
         video: "",
 
         reflection:
-            "I learned how to make a webshop app and improved my app developing skills through this projec. I further understood how AI could be so useful to many aspects for this webshop."
+            "I learned how to make a webshop app and improved my app developing skills through this project. I further understood how AI could be so useful to many aspects for this webshop."
 
     },
 
@@ -340,7 +340,7 @@ let projects = {
             "In this project I worked together with a group of 4 other students. We had to make a website for GIGIFILMS which they could then use for casting calls, finding actors, for actors to find movies in production to work with & to show GIGIFILMS' recent movies.",
 
         description2:
-            "We had to learn how to develop a website from scractch after coming to the consensus as to how we're going to design the website & how to implement a database into the website.",
+            "We had to learn how to develop a website from scratch after coming to the consensus as to how we're going to design the website & how to implement a database into the website.",
 
         image1: "images/gigi/cover-gigi.png",
 
@@ -390,10 +390,10 @@ let projects = {
         cover: "images/project10.jpg",
 
         description:
-            "I created my first Maya project, which was this haunted house with a ghost that comes around it every halloween.",
+            "I created my first Maya project, which was this haunted house with a ghost that comes around it every Halloween.",
 
         description2:
-            "I came up with the idea since my birthday ironically is on the day of halloween and I wanted to challenge myself making this house a tough but educational experience. I never knew I would fall in love with 3D developing this much after doing this project.",
+            "I came up with the idea since my birthday ironically is on the day of Halloween and I wanted to challenge myself making this house a tough but educational experience. I never knew I would fall in love with 3D developing this much after doing this project.",
 
         image1: "images/house/house-cover.png",
 
@@ -403,7 +403,7 @@ let projects = {
             "I started finding inspiration online from other haunted houses or spooky buildings to give me an idea how mine could look. I then put all of it inside a moodboard. I then went and sketched out everything that I wanted to include in my little house.",
 
         development:
-            "I went on and started building the huise step by step. I had nothing to help me but the tips from my tutor, so I then went on youtube to find tutorials on how everything worked in Maya such as the keybinds to get familiar with everything. I then went and started extruding, removing faces or adding edge loops wherever it was necessary. I did not want to have too many faces on any of my shapes too keep it all low poly. After everything was modelled, I started using shaders to color in my models as what they should look like.",
+            "I went on and started building the house step by step. I had nothing to help me but the tips from my tutor, so I then went on YouTube to find tutorials on how everything worked in Maya such as the keybinds to get familiar with everything. I then went and started extruding, removing faces or adding edge loops wherever it was necessary. I did not want to have too many faces on any of my shapes too keep it all low poly. After everything was modelled, I started using shaders to color in my models as what they should look like.",
 
         result:
             "In the end I rendered my house using Arnold and I was so proud of this project. I did notice the lighting was really dim so I then added some to not fully light up the scene but to also give it that spooky vibe. It was a fun experience!",
@@ -453,14 +453,14 @@ let projects = {
             "I had to make a userinterface for a student platform where tips could be shared around studying, learning, & procrastination.",
 
         description2:
-            "I had to do this with another student. Through this project we had to udnerstand how UI/UX designing is.",
+            "I had to do this with another student. Through this project we had to understand how UI/UX designing is.",
 
         image1: "images/learning/learning-7.png",
 
         aboutVideo: "",
 
         research:
-            "We started mapping out the userflow in a mindmap and what pages you can access through it. We then brainstormed and started making 2 moodboards to find the style of our UI. We then compared our moodboards and started making one moodboard together using the inspiration from our seperate moodboards. We then made a styleguide so that we know what our titles and fonts are going to look like.",
+            "We started mapping out the userflow in a mindmap and what pages you can access through it. We then brainstormed and started making 2 moodboards to find the style of our UI. We then compared our moodboards and started making one moodboard together using the inspiration from our separate moodboards. We then made a styleguide so that we know what our titles and fonts are going to look like.",
 
         development:
             "We then started working in Figma and made a first wireframe to already have an idea of how our UI & userflow will be mapped out. When that was finished, we started designing everything with the help of our styleguide. We even added animations in our UI to make it more dynamic and less static.",
