@@ -111,6 +111,8 @@ img {
 ========================= */
 
 .project-hero {
+    position: relative;
+    isolation: isolate;
     min-height: 85vh;
 
     padding: 180px 8% 100px;
@@ -119,18 +121,35 @@ img {
     flex-direction: column;
     justify-content: center;
 
-    background: linear-gradient(
-        -45deg,
-        #061426,
-        #164E7A,
-        #0A3158
-    );
+    background-image:
+        linear-gradient(
+            rgba(6, 20, 38, 0.78),
+            rgba(6, 20, 38, 0.88)
+        ),
+        var(
+            --hero-gif,
+            linear-gradient(
+                -45deg,
+                #061426,
+                #164E7A,
+                #0A3158
+            )
+        );
 
-    background-size: 400% 400%;
-
-    animation: blueGradient 15s ease infinite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     color: #F4F1E8;
+}
+
+.project-hero.bright-gif {
+    background-image:
+        linear-gradient(
+            rgba(6, 20, 38, 0.45),
+            rgba(6, 20, 38, 0.60)
+        ),
+        var(--hero-gif);
 }
 
 @keyframes blueGradient {

@@ -14,6 +14,8 @@ let projects = {
 
         cover: "images/modelling/modelling-cover.png",
 
+        heroGif: "images/modelling/MilesMorales_City.gif",
+
         description:
             "A 3D animation project created during my studies. This project helped me understand how to fully model, rig, & texture a character in Maya.",
 
@@ -69,6 +71,8 @@ let projects = {
         year: "2026",
 
         cover: "images/gaming/gaming-cover.png",
+
+        heroGif: "images/gaming/gaming-background.gif",
 
         description:
             "I created a dungeon game demo together with another student where the player has to find their way out of the dungeon by finding the keys deep inside it.",
@@ -499,6 +503,18 @@ let projectId =
 let project =
     projects[projectId];
 
+    // PROJECT HERO BACKGROUND
+
+let projectHero = document.querySelector(".project-hero");
+
+if (project.heroGif) {
+    projectHero.style.setProperty(
+        "--hero-gif",
+        `url("${project.heroGif}")`
+    );
+}
+
+projectHero.classList.add("bright-gif");
 
 if (!project) {
 
